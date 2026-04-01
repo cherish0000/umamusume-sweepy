@@ -230,6 +230,7 @@ REF_TRAINING_ITEMS_BTN = Template("training_items", UMAMUSUME_REF_TEMPLATE_PATH)
 REF_MANT_ON_SALE = Template("mant_on_sale", UMAMUSUME_REF_TEMPLATE_PATH, ImageMatchConfig(match_area=Area(392, 1062, 432, 1087)))
 REF_BLUE_LINE = Template("blue_line", UMAMUSUME_REF_TEMPLATE_PATH)
 REF_MANT_FINAL_END = Template("mant_final_end", UMAMUSUME_REF_TEMPLATE_PATH, ImageMatchConfig(match_area=Area(280, 10, 450, 90), match_accuracy=0.80))
+REF_MANT_APTITUDE_TEST = Template("mant_aptitude_test", UMAMUSUME_REF_TEMPLATE_PATH, ImageMatchConfig(match_area=Area(150, 10, 570, 80), match_accuracy=0.80))
 REF_MANT_SHOP_TITLE = Template("shop_title", UMAMUSUME_REF_MANT_SHOP_PATH, ImageMatchConfig(match_area=Area(17, 8, 78, 35)))
 REF_SHOP_MANT_CHECK = Template("shop_mant_check", UMAMUSUME_REF_MANT_SHOP_PATH, ImageMatchConfig(match_area=Area(23, 10, 74, 31), match_accuracy=0.83))
 

@@ -136,6 +136,11 @@ def script_cultivate_result(ctx: UmamusumeContext):
     ctx.ctrl.click_by_point(CULTIVATE_RESULT_CONFIRM)
 
 
+def script_mant_end_screen(ctx: UmamusumeContext):
+    log.info("MANT end screen detected - clicking Next")
+    ctx.ctrl.click(360, 1190, "MANT end screen Next")
+
+
 def script_cultivate_catch_doll(ctx: UmamusumeContext):
     ctx.ctrl.click_by_point(CULTIVATE_CATCH_DOLL_START, hold_duration=1888)
 

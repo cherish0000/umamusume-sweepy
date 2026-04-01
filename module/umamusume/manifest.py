@@ -59,7 +59,9 @@ base_script_dict = {
     CULTIVATE_URA_RACE_2: script_cultivate_goal_race,
     CULTIVATE_URA_RACE_3: script_cultivate_goal_race,
     ACTIVITY_RESULT: script_cultivate_result,
-    ACTIVITY_REWARD: script_cultivate_result
+    ACTIVITY_REWARD: script_cultivate_result,
+    MANT_CLIMAX_RESULT: script_mant_end_screen,
+    MANT_APTITUDE_TEST: script_mant_end_screen
 }
 
 def build_cultivate_script_dict():

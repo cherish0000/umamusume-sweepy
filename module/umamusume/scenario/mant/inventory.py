@@ -703,6 +703,9 @@ INSTANT_USE_ITEMS = [
     "Scholar's Hat",
     "Reporter's Binoculars",
     'Master Practice Guide',
+    'Speed Notepad', 'Stamina Notepad', 'Power Notepad', 'Guts Notepad', 'Wit Notepad',
+    'Speed Manual', 'Stamina Manual', 'Power Manual', 'Guts Manual', 'Wit Manual',
+    'Speed Scroll', 'Stamina Scroll', 'Power Scroll', 'Guts Scroll', 'Wit Scroll',
 ]
 
 ONE_TIME_BUFF_ITEMS = {

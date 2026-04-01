@@ -34,6 +34,7 @@ from module.umamusume.script.cultivate_task.ui_handlers import (
     script_support_card_select,
     script_cultivate_final_check,
     script_cultivate_result,
+    script_mant_end_screen,
     script_cultivate_catch_doll,
     script_cultivate_catch_doll_result,
     script_cultivate_goal_achieved,
@@ -87,6 +88,7 @@ __all__ = [
     'script_factor_receive',
     'script_historical_rating_update',
     'script_scenario_rating_update',
+    'script_mant_end_screen',
     'script_not_found_ui',
     'should_use_pal_outing_simple',
 ]

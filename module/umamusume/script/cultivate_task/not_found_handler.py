@@ -170,11 +170,16 @@ def script_not_found_ui(ctx: UmamusumeContext):
         from module.umamusume.define import ScenarioType
         if (hasattr(ctx, 'cultivate_detail') and hasattr(ctx.cultivate_detail, 'scenario')
                 and ctx.cultivate_detail.scenario.scenario_type() == ScenarioType.SCENARIO_TYPE_MANT):
-            from module.umamusume.asset.template import REF_MANT_FINAL_END
+            from module.umamusume.asset.template import REF_MANT_FINAL_END, REF_MANT_APTITUDE_TEST
             img_gray = getattr(ctx, 'current_screen_gray', None) or cv2.cvtColor(ctx.current_screen, cv2.COLOR_BGR2GRAY)
             final_match = image_match(img_gray, REF_MANT_FINAL_END)
             if final_match.find_match:
                 ctx.ctrl.click(360, 1110, "MANT final end Next")
+                return
+            aptitude_match = image_match(img_gray, REF_MANT_APTITUDE_TEST)
+            if aptitude_match.find_match:
+                log.info("MANT Aptitude Test end screen detected - clicking Next")
+                ctx.ctrl.click(360, 1190, "MANT aptitude test Next")
                 return
     except Exception:
         pass
